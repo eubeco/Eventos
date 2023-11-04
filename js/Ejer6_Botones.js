@@ -1,5 +1,5 @@
 function mostrarMensaje() {
-  alert("Has pulsado sobre un botón");
+  alert("Has pulsado sobre un bot\u00F3n");
 }
 
 window.onload = function() {
