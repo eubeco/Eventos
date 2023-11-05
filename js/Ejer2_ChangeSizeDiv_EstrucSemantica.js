@@ -1,13 +1,17 @@
-//Don't work. No funciona. I don't know where is wrong. No sé donde está el error.
-function changeSizeDiv(tamanyFuente) {
-  this.style.fontSize = tamanyFuente + "pt";
+
+function changeSizeDiv(elEvento) {
+  switch (elevento.type) {
+    case 'mouseover':
+      this.style.fontSize = "16pt";
+      break;
+    case 'mouseout':
+      this.style.fontSize = "12pt";
+      break;
+  }
 }
 
 window.onload = function() {
-  document.getElementById("textoDiv").onmouseover = function() {
-    changeSizeDiv("16");
-  };
-  document.getElementById("textoDiv").onmouseout = function() {
-    changeSizeDiv("12");
-  };
+  document.getElementById("textoDiv").onmouseover =changeSizeDiv;
+
+  document.getElementById("textoDiv").onmouseout = changeSizeDiv;
 }
