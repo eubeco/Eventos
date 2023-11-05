@@ -1,6 +1,6 @@
 
 function changeSizeDiv(elEvento) {
-  switch (elevento.type) {
+  switch (elEvento.type) {
     case 'mouseover':
       this.style.fontSize = "16pt";
       break;
